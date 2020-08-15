@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#About 
 
-## Available Scripts
+GetWeather App is a React.js project which lets you find the weather of any city and give you all the relevant 
+weather information in a very good looking responsive(almost all cases) page rather than intimidating you with 
+lots of information it only displays the relevant information.
 
-In the project directory, you can run:
+#Technologies Used 
 
-### `npm start`
+To built the the App I used the create-react-app as base for the app changed the App.js and index.js files with 
+my own and also changed the 'App.css' and added 3 more components. Used Bootstrap4.0.0 for responsiveness where 
+the grid system and flexbox(both used) came handy as well as the CSS3 media queries helped in positioning the 
+content at different screen sizes. Moment.js is anothe rhandy tool used for date & time manipulation.
+Following are the tools/lib/frameworks used-  
+1.React.js 
+2.Moment.js 
+3.Bootstrap 4.0.0 
+4.JavaScript 
+5.CSS3 
+6.HTML5
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Error handling is also being handled and in case you are not entering in the textbox it will tell you to enter
+the city name or enter he city name correctly when the name doesn't matches any API output.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Currently the app shows the current weather of a place and the locale date & time of the location from where you 
+are using it. 
 
-### `npm test`
+#Future Scope
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In future I'm planning to use Google maps to get the local timezone, precipitation prediction 
+and some more information to be added. A much more interactive UI is also being updated.
 
-### `npm run build`
+#To see the live demo of the app
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+please visit the following - https://stupefied-goodall-28909e.netlify.app
