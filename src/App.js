@@ -1,5 +1,4 @@
 import React from "react";
-
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
@@ -26,12 +25,12 @@ class App extends React.Component {
     description: undefined,
     error: undefined
   }
-
+  
   //#---------Using the getWeather function fetching the API and parsing it with JSON---------- 
   getWeather = async (e) => {
     e.preventDefault();
     const city = e.target.elements.city.value;
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY}&units=metric`);
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY}&units=metric`);
     const data = await api_call.json();
     
     console.log(data);
@@ -78,10 +77,10 @@ class App extends React.Component {
           <div className="main">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-sm-5 col-xs-12 title-container">
+                <div className="col-md-5 col-sm-12 col-xs-12 title-container">
                   <Titles />
                 </div>
-                <div className="col-sm-7 col-xs-12 form-container">
+                <div className="col-md-7 col-sm-12 col-xs-12 form-container">
                   <Form getWeather={this.getWeather} />
                   <Weather 
                     temperature = {this.state.temperature} 

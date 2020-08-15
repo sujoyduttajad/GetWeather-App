@@ -1,7 +1,7 @@
 import React from "react";
 
 const Weather = props => (
-	<div className="weather__info">
+	<div className="weather__info container-fluid">
 	 {	
 	 	props.city && <h2 className="weather__key"> 
 	 		<span> { props.city }, { props.country }</span>
@@ -14,23 +14,23 @@ const Weather = props => (
 	 }
 	 <div>
 	 { 	
-	 	props.temperature && <h1 className="temp">{ Math.round(props.temperature) }<sup>o</sup>C </h1> 
-	 }
-	 {
-		 props.icon && <img className="img-fluid" src={`http://openweathermap.org/img/w/${props.icon}.png`} alt="weather-img"/>
+	 	props.temperature && props.icon && <h1><span className="temp">{ Math.floor(props.temperature) }<sup>o</sup>C 
+		 <img className="img-fluid" src={`http://openweathermap.org/img/w/${props.icon}.png`} alt="weather-img"/></span>
+		 </h1> 
 	 }
 	 </div>
 	 <div>
 			{ 	
-				props.feels_like && <p className="pad"><strong>Feels_like:</strong> { Math.round(props.feels_like) }<sup>o</sup>C</p> 
+				props.feels_like && <p className="pad"><strong>Feels like:</strong> { Math.floor(props.feels_like) }<sup>o</sup>C</p> 
 			}
 			{ 	
-				props.min && <p className="pad"><strong>Min Temp:</strong> { Math.round(props.min) }<sup>o</sup>C</p> 
+				props.min && <p className="pad"><strong>Min Temp:</strong> { Math.floor(props.min) }<sup>o</sup>C</p> 
 			}
 			{ 	
-				props.max && <p className="pad"><strong>Max Temp:</strong> { Math.round(props.max) }<sup>o</sup>C</p> 
+				props.max && <p className="pad"><strong>Max Temp:</strong> { Math.floor(props.max) }<sup>o</sup>C</p> 
 			}
 	 </div>
+	 <div className="contains-over">
 	 { 	
 	 	props.description && props.humidity && props.wind &&  
 		 	<div className="contains">Conditions:
@@ -41,6 +41,7 @@ const Weather = props => (
 				 </ul>
 			 </div> 
 	 }
+	 </div>
 	 { 
 	 	props.error && <p className="weather__error">{ props.error }</p>  
 	 }
