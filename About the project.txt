@@ -9,7 +9,7 @@ lots of information it only displays the relevant information.
 To built the the App I used the create-react-app as base for the app changed the App.js and index.js files with 
 my own and also changed the 'App.css' and added 3 more components. Used Bootstrap4.0.0 for responsiveness where 
 the grid system and flexbox(both used) came handy as well as the CSS3 media queries helped in positioning the 
-content at different screen sizes. Moment.js is anothe rhandy tool used for date & time manipulation.
+content at different screen sizes. Moment.js is another handy tool used for date & time manipulation.
 Following are the tools/lib/frameworks used-  
 1.React.js 
 2.Moment.js 
