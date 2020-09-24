@@ -4,7 +4,7 @@ GetWeather App is a React.js project which lets you find the weather of any city
 weather information in a very good looking responsive page rather than intimidating you with 
 lots of information it only displays the relevant information.
 
-# Technologies Used 
+# Tech Stack 
 
 To built the the App I used the create-react-app as base for the app changed the App.js and index.js files with 
 my own and also changed the 'App.css' and added 3 more components. Used Bootstrap4.0.0 for responsiveness where 
