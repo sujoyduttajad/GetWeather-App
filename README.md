@@ -27,11 +27,13 @@ are using it.
 # Future Scope
 
 In future I'm planning to use Google maps to get the local timezone, precipitation prediction 
-and some more information to be added. A much more interactive UI is also being updated.
+and some more information to be added. A much more interactive UI is also being planned.
 
 # To see the live demo of the app
 
 please visit the following - [https://stupefied-goodall-28909e.netlify.app](https://stupefied-goodall-28909e.netlify.app)
+
+# Resources
 
 Weather Icon List-
 [Weather Icon List](https://openweathermap.org/weather-conditions#Icon-list)
